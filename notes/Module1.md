@@ -1,8 +1,8 @@
-# The Begining  
+# The Beginning  
 
 ### Remember!
 1. Can follow any book that covers syllabus  
-2. Don't follow websites untill they ain't trusted
+2. Don't follow websites until they ain't trusted
 
 ## Table of Content  
 
@@ -13,7 +13,7 @@
 > - Numeral Systems  
 > - Data Encoding  
 
-### 2. Pre-Requisites:  
+### 2. Prerequisites:  
 > - Basic Maths
 
 ---
@@ -21,13 +21,13 @@
 ## Information & Data
 
 **Information:** A fact/piece of knowledge about real world  
-**Data:** Representation of Information in a format that can be stored processed by the computers  
+**Data:** Representation of Information in a format that can be stored, processed by the computers  
   
-_The data has no meaning on its own, alone!_  
+_The data hava no meaning on its own, alone!_  
   
 eg.:
  1. A _credit card number_ or someone's _name_ is a piece of an information
- 2. When CC no. or name is used for some specific purpos, it becomes data (as actually data element is stored on the CC using magnetically charged particles)
+ 2. When Credit Card no. or name is used for some specific purpose, it becomes data (as here the data element are stored on the Credit Card using magnetically charged particles)
 
 ### Information can be:  
   
@@ -47,7 +47,7 @@ eg.:
 > * eg.: height, weight  
   
 1. **Discrete:**
-> * These are finite i.e. countable
+> * These are finite, i.e. countable
 > * Non-Fractional (integers only)
 > * Associates with Physical Measurement  
 > * eg.: number of days in a month  
@@ -58,25 +58,25 @@ eg.:
 
 ### 1. Analog  
 **- Encodes** real world info **as continuous**  
-* eg.: Conversion of song into continuously varying electric signal by mic  
+* eg.: Conversion of song into continuously varying electrical signal by mic  
     
-**- Operats** on **Continuous** data  
+**- Operates** on **Continuous** data  
 * eg.: Amplifier - amplifies and sends the signal to the speaker
 
 ### 2. Digital  
 * **Encodes real world info** (both continuous & discrete) into **Discrete** data  
 * **Operates** on **Discrete** data  
 * **Digital** system **preferred** over Analog  
-* **Mordern Comp.** are good example
+* **Modern Computer** are all work on it  
 
-## Bits, Bytes & Bit Patterns
+## Bits, Bytes & Bit-Patterns
 
 ### Bits:  
 The term _Bit_ comes from _**Bi**nary Digi**t**_.  
-As it's understood that a **binary** itself deals with _two_. Hence, there is only the scope of either of the 2 values i.e. **zero** (0) & **one** (1).  
+As it's understood that a **binary** itself deals with _two_. Hence, there is only the scope of either of the 2 values, i.e. **zero** (0) & **one** (1).  
   
 Hence formally, a 0 or 1 is considered as a **bit** in the binary number system. Usually we represent a the term _bit_ by a lower case 'b' _(b)_.  
-_Some times these values also represent 'True & False', or 'On & Off'!_  
+_Sometimes these values also represent 'True & False', or 'On & Off'!_  
 
 A **group of 4** such **bits** is termed as a _**Nibble**_.  
 
@@ -84,8 +84,8 @@ A **group of 4** such **bits** is termed as a _**Nibble**_.
 A group of _2-nibbles_ or **8-bits** is called a _**Byte**_. It is represented by an upper case 'b' _(B)_.  
 
 ### Bit-Strings or Bit-Patterns:  
-A sequece of bits can be used to represent different numbers or data. To do so, we often group the different number of the bits.  
-Here are few terms for the the set of bits of different length:   
+A sequence of bits can be used to represent different numbers or data. To do so, we often group the different number of the bits.  
+Here a few terms in the the set of bits of different length:   
 
 _2<sup>10</sup> = 1,024_  
 
@@ -101,7 +101,7 @@ _2<sup>10</sup> = 1,024_
 | 1 Exabyte (EB)    |   1,024 Petabytes |   
   
 ## Numeral Systems  
-There are so many ways to represent the data numerically that are know as Numaral Systems. For eg.: Decimal Binary, Roman etc...  
+There are so many ways to represent the data numerically that are known as Numaral Systems. For eg.: Decimal, Binary, Roman etc...  
 **Roman:** I, II, III, IV ....  
 **Decimal:** {0,1,2,3,4,5,6,7,8,9}  
 **Binary:** {0,1}  
@@ -111,18 +111,18 @@ There are so many ways to represent the data numerically that are know as Numara
 ![ASCII](../img/ascii.png)  
   
   
-We use different set of collection of bits to repreasent it as a different number system eg.:  
-> * the _**binary number** system can only accomadate_ 2<sup>1</sup> = 2 unique values i.e. **zero** (0) & **one** (1).   
-> * the _**octal number** system can accomadate_ 2<sup>3</sup> = 8 unique values i.e. ranging between 0-7 i.e. **{000, 111}**.    
-> * the _**hexadecimal number** system can accomadate_ 2<sup>4</sup> = 19 unique values i.e. ranging between 0-F i.e. **{000, FFF}**.    
+We use different sets of collection of bits to represent it as a different number system eg.:  
+> * the _**binary number** system can only accommodate_ 2<sup>1</sup> = 2 unique values i.e. **zero** (0) & **one** (1).   
+> * the _**octal number** system can accommodate_ 2<sup>3</sup> = 8 unique values, i.e. ranging between 0-7 i.e. **{000, 111}**.    
+> * the _**hexadecimal number** system can accommodate_ 2<sup>4</sup> = 16 unique values, i.e. ranging between 0-F i.e. **{0000, 1111}**.    
   
 ### Positional Numeral System   
-A positional (numeral) system is a system for **representation of numbers by an ordered set** of numerals symbols (called _digits_) in which the value of a numeral symbol depends on its position. _For each position a unique symbol or a limited set of symbols is used._  
+A positional (numeral) system is a system for **representation of numbers by an ordered set** of numeral symbols (called _digits_) in which the value of a numeral symbol depends on its position. _For each position a unique symbol or a limited set of symbols is used._  
   
 ![pos.num. sys.](../img/posNS.png)
 
 ### Conversion  
-We are often interested to convert the values from one to another number system. The above mentioned formula can be used to convert the them. These coversions can be for the following types:   
+We are often interested to convert the values from one to another number system. The above mentioned formula can be used to convert the them. These conversions can be for the following types:   
 1. Binary to Decimal   
 2. Binary to Octal   
 3. Binary to Hex   
@@ -135,36 +135,36 @@ eg.: _42.31 = 2x10<sup>0</sup> + 4x10<sup>1</sup> + 3x10<sup>-1</sup> + 1x10<sup
    
 ## Data Encoding
 The different formant of data is needed to be encoded ultimately in either of the 0 & 1. The data can be of various types as well. So, mostly we have to deal with following encodings:  
-> * Character Encoding  
+> ### Character Encoding  
 > ![Char](../img/encChar.png)  
-> * Color Encoding  
-> There are basically 4 main colours whose intensity can lead to all the different shaades.
+> ### Color Encoding  
+> There are basically 4 main colours whose intensity can lead to all the different shades.
 > ![Char](../img/encRGB.png)  
-> * Image Encoding  
-> Generally the images are classified in 4 types based on their shades. Main 3 are given below:  
+> ### Image Encoding  
+> Generally the images are classified into 4 types based on their shades. Main three are given below:  
 >   a) Black and White (#00 or #ff)  
 >   b) Gray Scale (#00 to #ff)  
 >   c) Coloured (#000000 or #ffffff)   
 > ![Char](../img/encPic.png)  
-> * Sound Encoding  
+> ### Sound Encoding  
 > ![Char](../img/encSnd.png)  
   
 ---
 
 ## Some Other Common Issues  
-We deal with some other issues too while converting the data from one form to another.  As -  
+We deal with some other issues too, while converting the data from one form to another.  As -  
 
 #### Approximation & Precision  
 * These are used when the calculation does not end up with any significant result.  
 
 #### Errors  
 * **Overflow:**  
-When the number of resultent bits exceed the length accomodated  
-eg.: _1 + 255 to store in a 8-bit num_  
+When the resultant bit-size exceeds the length accommodated  
+eg.: _1 + 255 to store in a 8-bit num._  
 * **Underflow:**  
-When the number of resultent number is too small to fit into the length allowed  
+When the resultant bit-size is too small to fit into the length allowed  
 eg.: _0.001 / 255_  
   
 ---  
 
-[_Back to Home_](../)
+[_Back to home_](../)
