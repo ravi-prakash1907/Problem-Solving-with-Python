@@ -1,0 +1,338 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "name": "Mid Sem - 2(lab).ipynb",
+      "provenance": [],
+      "authorship_tag": "ABX9TyPARtwklHSpUlxBk1v+c1nr",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/ravi-prakash1907/Problem-Solving-with-Python/blob/main/Submissions/Last%20Quiz%20(5)ipynb\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "BmOT74xVffnE"
+      },
+      "source": [
+        "## Last Quiz"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "VqAP7MNZg2nx"
+      },
+      "source": [
+        "### Problem 1:\n",
+        "\n",
+        "_Write a program to get a positive integer (n) from the user and find its factorial. Then print the absolute difference between the integer and its factorial, i.e., |n-n!|._ \n",
+        "\n",
+        "_Here are examples of how the program should behave (user input given in bold):_  \n",
+        "\n",
+        "\n",
+        "**Example 1:**  \n",
+        "```\n",
+        "Enter number: 1\n",
+        "Output: 0\n",
+        "```\n",
+        "\n",
+        "**Example 2:**  \n",
+        "```\n",
+        "Enter number: 2\n",
+        "Output: 0\n",
+        "```\n",
+        "\n",
+        "**Example 3:**  \n",
+        "```\n",
+        "Enter number: 4\n",
+        "Output: 20\n",
+        "```\n",
+        "\n",
+        "### Solution:"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "JYewwPqHhAq5"
+      },
+      "source": [
+        "def fact(n):\n",
+        "  if n == 1:\n",
+        "    return n\n",
+        "  else:\n",
+        "    return n*fact(n-1)\n",
+        "\n",
+        "num = int(input(\"Enter number: \"))\n",
+        "\n",
+        "print(\"Output:\",abs(num-fact(num)))"
+      ],
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "uL_mgu5MhD4s"
+      },
+      "source": [
+        "### Problem 2:\n",
+        "\n",
+        "_Find the average of the numbers entered by the user._   \n",
+        "\n",
+        "_Here are examples of how the program should behave (user input given in bold):_  \n",
+        "\n",
+        "\n",
+        "**Example 1:**  \n",
+        "```\n",
+        "Enter the numbers: -3, 8.6, 5\n",
+        "Average: 3.533333333333333\n",
+        "```\n",
+        "\n",
+        "**Example 2:**  \n",
+        "```\n",
+        "Enter the numbers: 1, 1\n",
+        "Average: 1.0\n",
+        "```\n",
+        "\n",
+        "### Solution:"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "II1LOUpQhEod",
+        "outputId": "f64e18c9-badc-4904-967d-b8f2c81d721a"
+      },
+      "source": [
+        "numList = eval(input(\"Enter the numbers: \"))\n",
+        "\n",
+        "avg = sum(numList)/len(numList)\n",
+        "print(\"Average:\",avg)"
+      ],
+      "execution_count": 6,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "1,2,3\n"
+          ],
+          "name": "stdout"
+        },
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "2.0"
+            ]
+          },
+          "metadata": {
+            "tags": []
+          },
+          "execution_count": 6
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "4GYQkoiAhFMb"
+      },
+      "source": [
+        "### Problem 3:\n",
+        "\n",
+        "_Write a program that asks the user to enter a list of numbers. Print the list after replacing the first occurrence of a negative number with 0. If there are no negative numbers in the list, print the list unchanged._  \n",
+        "\n",
+        "_Here are examples of how the program should behave (user input given in bold):_  \n",
+        "\n",
+        "**Example 1:**  \n",
+        "```\n",
+        "Enter list: []\n",
+        "New list: []\n",
+        "```\n",
+        "\n",
+        "**Example 2:**  \n",
+        "```\n",
+        "Enter list: [1, 3, -5, -6, 7]\n",
+        "New list: [1, 3, 0, -6, 7]\n",
+        "```\n",
+        "\n",
+        "**Example 3:**  \n",
+        "```\n",
+        "Enter list: [9, 7]\n",
+        "New list: [9, 7]\n",
+        "```\n",
+        "\n",
+        "### Solution:"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "vHFpo_FFhFpu"
+      },
+      "source": [
+        "gotList = eval(input(\"Enter list: \"))\n",
+        "\n",
+        "for item in gotList:\n",
+        "  if item < 0:\n",
+        "    pos = gotList.index(item)\n",
+        "    gotList.remove(item)\n",
+        "    gotList.insert(pos,0)\n",
+        "    break\n",
+        "\n",
+        "print(\"New list:\",gotList)"
+      ],
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "6zewQFOehIxz"
+      },
+      "source": [
+        "### Problem 4:\n",
+        "\n",
+        "_Write a program that asks the user to enter 2 lists . Then create and print a new list combining the elements of the 2 lists as follows: If List1 is [1, 3, 5] and List2 is [2, 4, 6], the combined list will be [1, 2, 3, 4, 5, 6]. The first element of the combined list should be the first element of List1. Assume that the user-entered lists are of the same size._  \n",
+        "\n",
+        "_Here are examples of how the program should behave (user input given in bold):_  \n",
+        "\n",
+        "\n",
+        "\n",
+        "### Solution:"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "e4Z0Po2ihJdY"
+      },
+      "source": [
+        "l1 = eval(input(\"Enter List1: \"))\n",
+        "l2 = eval(input(\"Enter List2: \"))\n",
+        "\n",
+        "newList = []\n",
+        "for pos in range(len(l1)):\n",
+        "  newList.append(l1[pos])\n",
+        "  newList.append(l2[pos])\n",
+        "\n",
+        "print(\"The combined list is:\",newList)"
+      ],
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "YzKaW5yBhKGm"
+      },
+      "source": [
+        "### Problem 5:\n",
+        "\n",
+        "_Write a program that gets an integer from the user and prints the corresponding English alphabet in both Upper case and Lower case. For e.g., print \"A a\" for 1, \"B b\" for 2 and so on. If user enters an integer outside the valid range, print \"Invalid number\"._  \n",
+        "\n",
+        "_Here are examples of how the program should behave (user input given in bold):_  \n",
+        "\n",
+        "**Example 1:**  \n",
+        "```\n",
+        "Enter number: 26\n",
+        "Z z\n",
+        "```\n",
+        "\n",
+        "**Example 2:**  \n",
+        "```\n",
+        "Enter number: 2\n",
+        "B b\n",
+        "```\n",
+        "\n",
+        "**Example 3:**  \n",
+        "```\n",
+        "Enter number: 27\n",
+        "Invalid number\n",
+        "```\n",
+        "\n",
+        "### Solution:"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "B4D08Wb7hKft",
+        "outputId": "c145c14c-54c7-4aa6-f075-c05d5afee5b4"
+      },
+      "source": [
+        "charNum = int(input(\"Enter number: \"))\n",
+        "\n",
+        "upper = 64 # 65 is 'A'\n",
+        "lower = 96 # 97 is 'a'\n",
+        "\n",
+        "if charNum > 0 and charNum < 27:\n",
+        "  print(chr(charNum+upper), chr(charNum+lower))\n",
+        "else:\n",
+        "  print(\"Invalid number\")"
+      ],
+      "execution_count": 9,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "Enter number: 22\n",
+            "V v\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "h4EZMEZPnJ8S",
+        "outputId": "3fa57798-94fd-41c3-c2e9-eb06d1826e7a"
+      },
+      "source": [
+        "str()"
+      ],
+      "execution_count": 8,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "97"
+            ]
+          },
+          "metadata": {
+            "tags": []
+          },
+          "execution_count": 8
+        }
+      ]
+    }
+  ]
+}
